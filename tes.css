@@ -1,0 +1,25 @@
+html {
+    padding-left: 500px;
+    padding-top: 200px;
+    padding-right: 600px;
+
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: blue;
+}
+
+input {
+    margin-bottom: 5px;
+    background-color: transparent;
+}
+
+button {
+    margin-top: 15px;
+    background-color: blue;
+    color: white;
+    size: 20;
+    border-width: 1px;
+}
