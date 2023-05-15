@@ -1,0 +1,33 @@
+.claim {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.katalog {
+  margin-top: 50px;
+  margin-bottom: 70px;
+}
+
+.faq {
+  margin-top: 100px;
+  margin-bottom: 70px;
+}
+
+#faqtitle {
+  margin-left: 150px;
+}
+
+#dropdown {
+  margin-right: 150px;
+}
+
+#jumbotronTitle {
+  margin-top: 150px;
+  margin-left: 80px;
+}
+
+#form {
+  margin-top: 80px;
+  font-family: Be Vietnam Pro;
+  color: black;
+}
