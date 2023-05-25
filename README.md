@@ -1,2 +1,2 @@
 # MahaPrint-RPL
-Proyek Akhir RPL 2023/2024
+Proyek Akhir RPL Genap 2022/2023
