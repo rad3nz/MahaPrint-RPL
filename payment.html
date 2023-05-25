@@ -51,8 +51,23 @@
       }
     </style>
 
-    <title>Profile | MahaPrint</title>
+    <script>
+      // Get the text field
+      let copyText = document.getElementById("paymentCode").innerHTML;
+
+      const copyContent = async () => {
+        try {
+          await navigator.clipboard.writeText(text);
+          console.log("Content copied to clipboard");
+        } catch (err) {
+          console.error("Failed to copy: ", err);
+        }
+      };
+    </script>
+
+    <title>Payment | MahaPrint</title>
   </head>
+
   <body>
     <!-- Navbar start -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white shadow p-1">
@@ -114,95 +129,91 @@
     </nav>
     <!-- Navbar ends -->
 
-    <!-- profile bar start-->
-    <div class="container-fluid">
-      <div class="row align-items-start">
-        <div class="col" id="profil" style="height: 100px; max-width: 300px">
-          <div class="container" id="user_name" style="margin-top: 50px">
-            <img
-              src="Asset/material-symbols_account-circle-black.png"
-              alt="profile_icon"
-              width="40"
-              height="40"
-              class="me-3"
-            />
-            <strong>Hi, Syifa Adawiyah!</strong>
-            <a
-              href="login.html"
-              class="nav-link mt-0"
-              style="color: #ff9b98; margin-left: 45px"
-            >
-              Logout
-            </a>
-          </div>
+    <!-- order id start -->
+    <div class="container">
+      <h1 class="text-center my-5">
+        <strong>Order ID: MHS021992</strong>
+        <!-- order id ends -->
 
-          <!-- <a
-            href="/"
-            class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none"
-          >
-          </a> -->
+        <!-- payment info start -->
+      </h1>
+      <table class="table w-50 mx-auto">
+        <thead>
+          <tr>
+            <th scope="col" class="fs-5">Bank Syariah Indonesia</th>
+            <th scope="col-auto">
+              <img
+                src="Asset/Bank Syariah Indonesia - png.png"
+                alt="logo_bsi"
+                width="100"
+                class="float-end"
+              />
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <p class="mb-0 mt-3">Kode Pembayaran</p>
+              <p class="fs-5" id="paymentCode">
+                <strong> AA085770699775 </strong>
+              </p>
+              <p class="mt-5 mb-0">Total Pembayaran</p>
+              <p class="fs-5" id="totalPrice">
+                <strong> Rp500.000 </strong>
+              </p>
+            </td>
 
-          <ul class="nav nav-pills flex-column mb-auto mt-5">
-            <li class="nav-item"></li>
-            <li>
-              <a href="#" class="nav-link" style="color: #78c7ff">
-                <svg class="me-3" width="20" height="16">
+            <td>
+              <a>
+                <p class="fs-5 mt-4 text-end" style="color: #509bc8">
+                  <strong>Copy</strong>
                   <img
-                    src="Asset/material-symbols_shopping-basket.png"
-                    class="me-2"
-                    width="20"
+                    src="Asset/material-symbols_content-copy-outline-rounded.png"
+                    alt="copyLogo"
+                    width="25"
                   />
-                </svg>
-                My Order
+                </p>
               </a>
-            </li>
-            <li>
-              <a href="#" class="nav-link" style="color: black">
-                <svg class="me-3" width="20" height="10">
-                  <img
-                    src="Asset/material-symbols_manage-accounts-rounded.png"
-                    class="me-2"
-                    width="20"
-                  />
-                </svg>
-                Manage Account
+              <a>
+                <p
+                  class="fs-5 text-end"
+                  style="color: #509bc8; margin-top: 80px"
+                >
+                  <strong>Lihat Detail</strong>
+                </p>
               </a>
-            </li>
-          </ul>
-        </div>
-
-        <!-- profile bar ends -->
-
-        <!-- order list start -->
-
-        <div class="col" id="orderlist" style="background-color: #ced2ca; height: 530px">
-          <div class="container text-center">
-            <p class="fs-3 mt-5 mb-4">
-              <strong>My Orders</strong>
-            </p>
-
-            <div class="btn-group text-center" role="group" aria-label="Basic radio toggle button group">
-              <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
-              <label class="btn btn-outline-primary btn-light rounded-pill mx-2" style="width: 150px;" for="btnradio1">Active</label>
-            
-              <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-              <label class="btn btn-outline-primary btn-light rounded-pill mx-2" style="width: 150px;" for="btnradio2">Completed</label>
-            
-              <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
-              <label class="btn btn-outline-primary btn-light rounded-pill mx-2" style="width: 150px;" for="btnradio3">Cancelled</label>
-            </div>
-           
-            </div>
-          </div>
-        </div>
-      </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
+    <!-- payment info ends -->
 
-    <!-- <div class="d-flex flex-column p-3 bg-white" style="width: 280px"> -->
+    <!-- button start -->
+    <div class="container text-center">
+      <button
+        class="btn rounded me-2"
+        type="button"
+        style="color: #ebf7e5; background-color: #78c7ff; width: 270px"
+      >
+        <p class="my-1 mx-3">Cek Status Pembayaran</p>
+      </button>
+      <button
+        class="btn rounded"
+        type="button"
+        style="
+          color: #78c7ff;
+          outline-color: #78c7ff;
+          outline-style: solid;
+          width: 270px;
+        "
+      >
+        <p class="my-1 mx-5">Belanja Lagi</p>
+      </button>
+    </div>
+    <!-- button ends -->
 
-    <!-- order list end -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
