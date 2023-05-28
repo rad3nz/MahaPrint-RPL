@@ -122,19 +122,21 @@
           src="Asset/hero-image 1.png"
           class="card-img"
           alt="jumbotron background"
-          width="1263"
         />
         
         <div class="card-img-overlay d-flex align-items-center" id="jumbotronTitle">
           <div class="container d-flex">
             <div class="col-5 d-flex flex-column align-items-start">
               <div class="row">
-                <h1 class="card-title fw-bold" style="padding-left: 0;">Kebutuhan print kamu, <br>semudah itu</h1>
+                <div class="col-12">
+                  <h1 class="card-title fw-bold" style="font-size: 3vw; padding-left: 0;">Kebutuhan print kamu, <br>semudah itu</h1>
+                </div>
               </div>
-              <div class="row">
-                <button class="btn btn-light btn-lg" href="#katalog" role="button" style="color: #78c7ff;">Yuk Order
+              <div class="col-md-6">
+                <button class="btn btn-lg btn-light" href="#katalog" role="button" style="color: #78c7ff; font-size: 1.5vw;"><b>Yuk Order</b>
                   <i class="fa-solid fa-arrow-right ms-1"></i>
                 </button>
+              </div>
               </div>
             </div>
           </div>
@@ -144,52 +146,74 @@
     <!-- jumbotron end -->
 
     <!-- Claim start -->
-    <div class="container-fluid d-flex claim my-5" id="claim">
-        <div class="col-4">
-          <img src="Asset/Frame 9.png" alt="kualitas" width="250" />
+    <div class="d-flex container-fluid my-5 justify-content-center">
+      <div class="d-flex flex-row text-center justify-content-center flex-wrap my-3">
+        <div class="d-flex flex-column col-3 my-3 mx-4">
+          <div class="flex-row">
+            <img src="Asset/gem 1.svg" alt="kualitas" height="80">
+          </div>
+          <div class="flex-row">
+            <div class="fs-3"><b>Kualitas Top</b></div>
+          </div>
+          <div class="flex-row text-wrap">Kualitas printing kami adalah kelas atas diantara kelas atas</div> 
         </div>
-        <div class="col-4">
-          <img src="Asset/Frame 7.png" alt="pelayanan" width="250" />
+        <div class="d-flex flex-column col-3 my-3 mx-4">
+          <div class="flex-row">
+            <img src="Asset/circle-bolt.svg" alt="kualitas" height="80">
+          </div>
+          <div class="flex-row">
+            <div class="fs-3"><b>Pelayanan Kilat</b></div>
+          </div>
+          <div class="flex-row text-wrap">Pesanan kamu terjamin akan diproses dengan cepat</div>
+          <div class="flex-row"></div> 
         </div>
-        <div class="col-4">
-          <img src="Asset/Frame 8.png" alt="harga" width="250" />
+        <div class="d-flex flex-column col-3 my-3 mx-4">
+          <div class="flex-row">
+            <img src="Asset/tags 1.svg" alt="kualitas" height="80">
+          </div>
+          <div class="flex-row">
+            <div class="fs-3"><b>Kualitas Top</b></div>
+          </div>
+          <div class="flex-row text-wrap">Harganya tetap terjangkau, apalagi untuk mahasiswa</div> 
+        </div>
+        </div>
+        </div>
       </div>
     </div>
     <!-- Claim end -->
 
     <!-- Katalog banner start -->
-    <div class="card text-dark my-5">
-      <img
-        src="Asset/Frame 14.png"
-        alt="banner"
-        width="1000"
-        style="align-self: self-end"
-      />
-      <div class="card-img-overlay mt-5 ms-5 my-auto">
-        <div class="row justify-content-end">
-          <div class="col-2"></div>
-          <div class="col">
-            <h3 class="card-title fw-bold ms-5">Mulai print dari sekarang.</h3>
-            <h3 class="card-title fw-bold ms-5">Mau itu poster, tumbler</h3>
-            <h3 class="card-title fw-bold ms-5">hingga skripsi</h3>
-          </div>
-          <div class="col my-auto">
-            <a
-              class="btn btn-outline-dark btn-lg ms-5"
-              href="#katalog"
-              role="button"
-              style="font-size: 150%"
-              >Yuk Order
-              <img
-                class="ms-auto me-auto"
-                src="Asset/material-symbols_arrow-forward-rounded-black.png"
-                width="50"
-                alt="arrow"
-              />
-            </a>
+    <div class="d-flex container-fluid justify-content-end">
+      <div class="d-flex col-9">
+        <div class="card text-dark my-5 align-items-end">
+          <img src="Asset/Frame 14.png" alt="banner" width="1000"/>
+          <div class="card-img-overlay my-5">
+            <div class="row justify-content-end">
+              <div class="col-2"></div>
+              <div class="col">
+                <h3 class="card-title fw-bold">Mulai print dari sekarang.</h3>
+                <h3 class="card-title fw-bold">Mau itu poster, tumbler</h3>
+                <h3 class="card-title fw-bold">hingga skripsi</h3>
+              </div>
+              <div class="col my-auto">
+                <a
+                  class="btn btn-outline-dark btn-lg ms-5"
+                  href="#katalog"
+                  role="button"
+                  style="font-size: 150%"
+                  >Yuk Order
+                  <img
+                    class="ms-auto me-auto"
+                    src="Asset/material-symbols_arrow-forward-rounded-black.png"
+                    width="50"
+                    alt="arrow"
+                  />
+                </a>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
+      </div>   
     </div>
     <!-- katalog banner end -->
 
@@ -448,7 +472,7 @@
 
     <!-- Footer start -->
     <!-- <div class="container bg-primary"> -->
-    <div class="row" style="background-color: #78c7ff">
+    <div class="container-fluid" style="background-color: #78c7ff">
       <p class="text-center py-auto mt-3">
         <img src="Asset/© 2023 - MahaPrint.png" alt="copyright" width="130" />
       </p>
