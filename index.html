@@ -15,13 +15,13 @@
 
     <!-- My CSS -->
     <link rel="stylesheet" href="style.css" />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap"
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display "
       rel="stylesheet"
     />
     <!-- <link
@@ -47,7 +47,7 @@
       }
 
       h1 {
-        font-family: "DM Serif", serif;
+        font-family: "DM Serif Display", serif;
       }
     </style>
 
@@ -124,30 +124,27 @@
           alt="jumbotron background"
           width="1263"
         />
-
-        <div class="card-img-overlay" id="jumbotronTitle">
-          <h1 class="card-title fw-bold">Kebutuhan print kamu,</h1>
-          <h1 class="card-title fw-bold">semudah itu.</h1>
-          <a
-            class="btn btn-light btn-lg text-blue mt-3"
-            href="#katalog"
-            role="button"
-            style="font-size: 115%"
-            >Yuk Order
-            <img
-              class="ms-auto me-auto"
-              src="Asset/material-symbols_arrow-forward-rounded.png"
-              alt="arrow"
-            />
-          </a>
+        
+        <div class="card-img-overlay d-flex align-items-center" id="jumbotronTitle">
+          <div class="container d-flex">
+            <div class="col-5 d-flex flex-column align-items-start">
+              <div class="row">
+                <h1 class="card-title fw-bold" style="padding-left: 0;">Kebutuhan print kamu, <br>semudah itu</h1>
+              </div>
+              <div class="row">
+                <button class="btn btn-light btn-lg" href="#katalog" role="button" style="color: #78c7ff;">Yuk Order
+                  <i class="fa-solid fa-arrow-right ms-1"></i>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
     <!-- jumbotron end -->
 
     <!-- Claim start -->
-    <div class="container claim" id="claim">
-      <div class="row text-center">
+    <div class="container-fluid d-flex claim my-5" id="claim">
         <div class="col-4">
           <img src="Asset/Frame 9.png" alt="kualitas" width="250" />
         </div>
@@ -156,12 +153,6 @@
         </div>
         <div class="col-4">
           <img src="Asset/Frame 8.png" alt="harga" width="250" />
-        </div>
-      </div>
-      <div class="row text-center mt-5">
-        <div class="col">
-          <img src="Asset/Frame 12.png" alt="tokped" />
-        </div>
       </div>
     </div>
     <!-- Claim end -->
