@@ -56,63 +56,62 @@
 
   <body>
     <!-- Navbar start -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="Asset/Logo.png" alt="logo" width="180" />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle active"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Product
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Poster</a></li>
-                <li><a class="dropdown-item" href="#">Tumbler</a></li>
-                <li><a class="dropdown-item" href="#">Skripsi/Makalah</a></li>
-                <li><a class="dropdown-item" href="#">Pamflet</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="#" aria-current="page"
-                >About Us</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="#faq">FAQ</a>
-            </li>
-          </ul>
-          <form class="d-flex">
-            <a
-              class="btn ms-auto btn-primary text-nowrap text-white"
-              type="button"
-              href="signup.html"
-            >
-              Login / Signup
-            </a>
-          </form>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow p-1">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="home.php">
+            <img src="Asset/Logo.png" alt="logo" width="180" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle active"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Product
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="order.html">Poster</a></li> <!-- Perubahan disini -->
+                  <li><a class="dropdown-item" href="#">Tumbler</a></li>
+                  <li><a class="dropdown-item" href="#">Skripsi/Makalah</a></li>
+                  <li><a class="dropdown-item" href="#">Pamflet</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#" aria-current="page">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#faq">FAQ</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+                <a class="btn" href="profile.php" type="button">
+                  <img
+                    src="Asset/material-symbols_account-circle.png"
+                    alt="profileButton"
+                    width="50"
+                  />
+                  <span class="ms-2"><strong>Guest</strong></span>
+                </a>
+            </form>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
     <!-- Navbar ends -->
 <!-- Katalog kolom start -->
 <div class="container katalog justify-content-center flex-wrap" id="katalog">
@@ -122,18 +121,22 @@
     <div class="row mx-auto my-4 justify-content-center">
         <div class="text-center fs-4 my-2 primary-color"><b>Poster</b></div>
         <div class="col-3">
-            <div class="card mb-0">
-              <img src="Asset/poster.png" class="card-img" alt="poster" />
-              <div class="card-body">
-                <h5 class="card-title mb-0 fw-bold">Poster</h5>
-                <p class="card-text mt-0" style="font-family: Be Vietnam Pro">
-                  mulai dari <span style="color: #2EC4B6;"><b>Rp10.000</b></span></p>
+            <div class="card mb-0" style="height: 100%">
+              <a href="order.html" class="text-decoration-none" style="color: black;">
+                <img src="Asset/poster.png" class="card-img" alt="poster" />
+                <div class="card-body">
+                  <h5 class="card-title mb-0 fw-bold">Poster</h5>
+                  <p class="card-text mt-0" style="font-family: Be Vietnam Pro">
+                    mulai dari <span style="color: #2EC4B6;"><b>Rp10.000</b></span>
+                  </p>
+              </a>
                 <p
                   class="card-text text-muted text-wrap"
                   style="
                     font-family: Be Vietnam Pro;
                     color: #9fa597;
                     font-size: smaller;
+                    margin-top: 15px;
                   "
                 >
                   Customizable | Custom Sizes | Custom Material
@@ -142,18 +145,22 @@
             </div>
           </div>
           <div class="col-3">
-            <div class="card mb-0">
-              <img src="Asset/poster.png" class="card-img" alt="poster" />
-              <div class="card-body">
-                <h5 class="card-title mb-0 fw-bold">Poster</h5>
-                <p class="card-text mt-0" style="font-family: Be Vietnam Pro">
-                  mulai dari <span style="color: #2EC4B6;"><b>Rp10.000</b></span></p>
+            <div class="card mb-0" style="height: 100%">
+              <a href="order.html" class="text-decoration-none" style="color: black;">
+                <img src="Asset/poster.png" class="card-img" alt="poster" />
+                <div class="card-body">
+                  <h5 class="card-title mb-0 fw-bold">Poster</h5>
+                  <p class="card-text mt-0" style="font-family: Be Vietnam Pro">
+                    mulai dari <span style="color: #2EC4B6;"><b>Rp10.000</b></span>
+                  </p>
+              </a>
                 <p
                   class="card-text text-muted text-wrap"
                   style="
                     font-family: Be Vietnam Pro;
                     color: #9fa597;
                     font-size: smaller;
+                    margin-top: 15px;
                   "
                 >
                   Customizable | Custom Sizes | Custom Material
@@ -162,18 +169,22 @@
             </div>
           </div>
           <div class="col-3">
-            <div class="card mb-0">
-              <img src="Asset/poster.png" class="card-img" alt="poster" />
-              <div class="card-body">
-                <h5 class="card-title mb-0 fw-bold">Poster</h5>
-                <p class="card-text mt-0" style="font-family: Be Vietnam Pro">
-                  mulai dari <span style="color: #2EC4B6;"><b>Rp10.000</b></span></p>
+            <div class="card mb-0" style="height: 100%">
+              <a href="order.html" class="text-decoration-none" style="color: black;">
+                <img src="Asset/poster.png" class="card-img" alt="poster" />
+                <div class="card-body">
+                  <h5 class="card-title mb-0 fw-bold">Poster</h5>
+                  <p class="card-text mt-0" style="font-family: Be Vietnam Pro">
+                    mulai dari <span style="color: #2EC4B6;"><b>Rp10.000</b></span>
+                  </p>
+              </a>
                 <p
                   class="card-text text-muted text-wrap"
                   style="
                     font-family: Be Vietnam Pro;
                     color: #9fa597;
                     font-size: smaller;
+                    margin-top: 15px;
                   "
                 >
                   Customizable | Custom Sizes | Custom Material
@@ -182,18 +193,22 @@
             </div>
           </div>
           <div class="col-3">
-            <div class="card mb-0">
-              <img src="Asset/poster.png" class="card-img" alt="poster" />
-              <div class="card-body">
-                <h5 class="card-title mb-0 fw-bold">Poster</h5>
-                <p class="card-text mt-0" style="font-family: Be Vietnam Pro">
-                  mulai dari <span style="color: #2EC4B6;"><b>Rp10.000</b></span></p>
+            <div class="card mb-0" style="height: 100%">
+              <a href="order.html" class="text-decoration-none" style="color: black;">
+                <img src="Asset/poster.png" class="card-img" alt="poster" />
+                <div class="card-body">
+                  <h5 class="card-title mb-0 fw-bold">Poster</h5>
+                  <p class="card-text mt-0" style="font-family: Be Vietnam Pro">
+                    mulai dari <span style="color: #2EC4B6;"><b>Rp10.000</b></span>
+                  </p>
+              </a>
                 <p
                   class="card-text text-muted text-wrap"
                   style="
                     font-family: Be Vietnam Pro;
                     color: #9fa597;
                     font-size: smaller;
+                    margin-top: 15px;
                   "
                 >
                   Customizable | Custom Sizes | Custom Material
